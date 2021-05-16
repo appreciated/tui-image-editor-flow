@@ -47,8 +47,7 @@
     "@vaadin/vaadin-upload": "4.4.1",
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "lit-element": "2.5.1",
-    "lit-html": "1.4.1",
-    "tui-image-editor": "^3.14.3"
+    "lit-html": "1.4.1"
   },
   "devDependencies": {
     "chokidar": "^3.5.0",
@@ -142,6 +141,6 @@
       "typescript": "4.0.3",
       "extract-loader": "5.1.0"
     },
-    "hash": "cf17ad5c4d51d294e4c1883887a74406865165664d199cd6594d4a4182fb6e97"
+    "hash": "5d5bf6e3d5a7a9e239a6f4cd46a021c98a63538d78bbd31d8a28d64e7939572d"
   }
 }

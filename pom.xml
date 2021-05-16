@@ -3,7 +3,7 @@
 
     <groupId>org.vaadin.addons.appreciated</groupId>
     <artifactId>tui-image-editor-flow</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>Toast UI Image Editor</name>
     <description>Integration of the Toast UI Image Editor for Vaadin platform</description>
 
