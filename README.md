@@ -1,4 +1,4 @@
-# toast-ui editor for flow
+# Toast UI Image Editor for Vaadin platform
 
 Vaadin 14 Java integration of tui-image-editor
 

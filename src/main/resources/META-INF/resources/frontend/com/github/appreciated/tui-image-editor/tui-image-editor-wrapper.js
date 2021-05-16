@@ -44,10 +44,12 @@ class TuiImageEditorWrapper extends PolymerElement {
 
     ready() {
         super.ready();
-        const initMenu = this.initMenu;
-        const menuBarPosition = this.menuBarPosition;
+        // This is a workaround for libraries that are trying to access the element in which they operated via the
+        // normal dom. The solution is to add the element in which the library operate to the actual dom by
+        // appending elements to a slot of this element.
         const div = document.createElement('div');
         this.appendChild(div);
+        // Passing the properties set from the server-side to the Image Editor
         this.imageEditor = new ImageEditor(div, {
             includeUI: {
                 //https://stackoverflow.com/questions/54155431/toastui-image-editor-loadimagefromurl-doesnt-work
@@ -55,18 +57,20 @@ class TuiImageEditorWrapper extends PolymerElement {
                     path: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
                     name: 'Blank'
                 },
-                initMenu: initMenu ? initMenu : 'filter',
-                menuBarPosition: menuBarPosition ? menuBarPosition : 'bottom',
+                initMenu: this.initMenu ? this.initMenu : 'filter',
+                menuBarPosition: this.menuBarPosition ? this.menuBarPosition : 'bottom',
                 theme: this.theme === 'blackTheme' ? new BlackTheme().theme : new WhiteTheme().theme
             }
         });
     }
 
+    // Method that will be called from the server-side to send the image data back to the server-side
     retrieveImageData() {
         this.imageData = this.imageEditor.toDataURL();
         this.$server.onImageDataUpdate(this.imageData);
     }
 
+    // Method that will be called from the server-side to the the image on the client side
     setEditorImage() {
         this.imageEditor.loadImageFromURL(this.getAttribute("image-url"), "temporary-image-resource.png");
     }

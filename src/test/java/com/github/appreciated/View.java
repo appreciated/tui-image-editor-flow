@@ -1,7 +1,7 @@
 package com.github.appreciated;
 
-import com.github.appreciated.tui_editor.ToastUiImageEditor;
-import com.github.appreciated.tui_editor.ToastUiImageEditorTheme;
+import com.github.appreciated.tui_image_editor.ToastUiImageEditor;
+import com.github.appreciated.tui_image_editor.ToastUiImageEditorTheme;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.orderedlayout.FlexLayout;
 import com.vaadin.flow.router.Route;
