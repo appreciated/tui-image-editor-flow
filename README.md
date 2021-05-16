@@ -1,6 +1,6 @@
 # Toast UI Image Editor for Vaadin platform
 
-Vaadin 14 Java integration of tui-image-editor
+Vaadin 14 Java integration of [tui-image-editor](https://github.com/nhn/tui.image-editor)
 
 ## Development instructions
 
