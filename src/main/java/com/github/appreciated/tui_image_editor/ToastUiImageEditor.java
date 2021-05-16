@@ -30,8 +30,8 @@ public class ToastUiImageEditor extends Component implements HasSize {
     }
 
     /**
-     * Provides the Image shown in the png format asynchronously.
-     * @param consumer A consumer to receive the current image in form of a byte array
+     * Receives asynchronously the currently shown Image in the png format.
+     * @param consumer A consumer instance to receive the current image as png in form of a byte array.
      */
     public void getImage(Consumer<byte[]> consumer) {
         getElement().callJsFunction("retrieveImageData");
@@ -39,7 +39,7 @@ public class ToastUiImageEditor extends Component implements HasSize {
     }
 
     /**
-     * Receives the image as png in form of a base64 String and passes it to the consumer
+     * Receives the currently shown as png in form of a base64 String and passes it decoded to the consumer.
      */
     @ClientCallable
     private void onImageDataUpdate(String data) {
