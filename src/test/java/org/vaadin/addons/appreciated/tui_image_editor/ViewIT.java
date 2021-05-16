@@ -1,9 +1,8 @@
-package com.github.appreciated;
-
-import org.junit.Assert;
-import org.junit.Test;
+package org.vaadin.addons.appreciated.tui_image_editor;
 
 import com.vaadin.testbench.TestBenchElement;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class ViewIT extends AbstractViewTest {
 

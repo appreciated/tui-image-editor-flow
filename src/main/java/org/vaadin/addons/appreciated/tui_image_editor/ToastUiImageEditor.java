@@ -1,4 +1,4 @@
-package com.github.appreciated.tui_image_editor;
+package org.vaadin.addons.appreciated.tui_image_editor;
 
 import com.vaadin.flow.component.ClientCallable;
 import com.vaadin.flow.component.Component;
@@ -21,7 +21,7 @@ import java.util.function.Consumer;
 @NpmPackage(value = "tui-image-editor", version = "^3.14.3")
 @StyleSheet("https://uicdn.toast.com/tui-image-editor/v3.14.3/tui-image-editor.css")
 @StyleSheet("https://uicdn.toast.com/tui-color-picker/v2.2.6/tui-color-picker.css")
-@JsModule("./com/github/appreciated/tui-image-editor/tui-image-editor-wrapper.js")
+@JsModule("./org/vaadin/addons/appreciated/tui-image-editor/tui-image-editor-wrapper.js")
 public class ToastUiImageEditor extends Component implements HasSize {
 
     private Consumer<byte[]> consumer;

@@ -1,4 +1,4 @@
-package com.github.appreciated.tui_image_editor;
+package org.vaadin.addons.appreciated.tui_image_editor;
 
 public enum ToastUiImageEditorTheme {
     /**
